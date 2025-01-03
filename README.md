@@ -1,1 +1,1 @@
-Uzdenov CryptoAnalyzer project
+Uzdenov CryptoAnalyzer project!
