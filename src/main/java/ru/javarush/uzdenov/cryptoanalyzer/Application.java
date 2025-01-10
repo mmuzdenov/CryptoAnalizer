@@ -8,12 +8,15 @@ import java.util.Arrays;
 
 public class Application {
 
-    private MainController mainController;
+    private final MainController mainController;
+    private final String[] args;
+
     public Application(String[] args) {
+        this.args = args;
         mainController = new MainController();
     }
 
-    public Result run(String[] args) {
+    public Result run() {
         if (args.length>0) {
             String action = args[0];
             String[] parameters = Arrays.copyOfRange(args, 1, args.length);
