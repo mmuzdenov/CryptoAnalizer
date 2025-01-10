@@ -1,5 +1,7 @@
 package ru.javarush.uzdenov.cryptoanalyzer.constants;
 
+import java.io.File;
+
 public class Constants {
     private static final String rus = "ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮ";
     private static final String eng = "QWERTYUIOPLKJHGFDSAZXCVBNM";
@@ -11,4 +13,7 @@ public class Constants {
                                            eng.toLowerCase()+
                                            num +
                                            znp;
+
+    public static final String TXT_FOLDER = System.getProperty("user.dir")+ File.separator +
+                                            "text" + File.separator;
 }
