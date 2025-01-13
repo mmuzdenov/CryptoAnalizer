@@ -2,7 +2,6 @@ package ru.javarush.uzdenov.cryptoanalyzer.commands;
 
 import ru.javarush.uzdenov.cryptoanalyzer.commands.tools.CaesarConvertor;
 import ru.javarush.uzdenov.cryptoanalyzer.entity.Result;
-import ru.javarush.uzdenov.cryptoanalyzer.entity.ResultCode;
 
 import static ru.javarush.uzdenov.cryptoanalyzer.constants.Constants.ALPHABET;
 import static ru.javarush.uzdenov.cryptoanalyzer.constants.Constants.TXT_FOLDER;
