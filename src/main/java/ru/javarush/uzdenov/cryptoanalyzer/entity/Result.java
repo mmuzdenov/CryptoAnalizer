@@ -9,6 +9,14 @@ public class Result {
         this.resultCode = resultCode;
     }
 
+    public ResultCode getResultCode() {
+        return resultCode;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
     @Override
     public String toString() {
         return "Result{" +
