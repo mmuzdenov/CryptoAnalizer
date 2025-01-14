@@ -1,13 +1,15 @@
 package ru.javarush.uzdenov.cryptoanalyzer.controllers;
 
 import ru.javarush.uzdenov.cryptoanalyzer.commands.Action;
+import ru.javarush.uzdenov.cryptoanalyzer.commands.BruteForce;
 import ru.javarush.uzdenov.cryptoanalyzer.commands.Decoder;
 import ru.javarush.uzdenov.cryptoanalyzer.commands.Encoder;
 import ru.javarush.uzdenov.cryptoanalyzer.excetions.AppExeption;
 
 public enum Actions {
     ENCODE(new Encoder()),
-    DECODE(new Decoder());
+    DECODE(new Decoder()),
+    BRUTEFORCE(new BruteForce());
 
     private final Action action;
 

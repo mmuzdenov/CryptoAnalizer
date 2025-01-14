@@ -7,7 +7,9 @@ import java.io.*;
 
 import static ru.javarush.uzdenov.cryptoanalyzer.constants.Constants.ALPHABET;
 
+
 public class CaesarConvertor {
+
     public static String makeAlphabet(int key){
         String toAalphabet= ALPHABET.substring(key) + ALPHABET.substring(0, key);
         System.out.println("Encode:makeAlphabet");
@@ -36,7 +38,7 @@ public class CaesarConvertor {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return new Result("convert: Ok", ResultCode.OK);
     }
+
 }
