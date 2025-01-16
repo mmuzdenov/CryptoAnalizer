@@ -12,9 +12,9 @@ public class Encoder implements Action{
     public Result execute(String[] parameters) {
         Result ret;
         ret = CaesarConvertor.Execute(TXT_FOLDER+parameters[0],
-                TXT_FOLDER+parameters[1],
-                ALPHABET,
-                CaesarConvertor.makeAlphabet(Integer.parseInt(parameters[2])));
+                                TXT_FOLDER+parameters[1],
+                                ALPHABET,
+                                CaesarConvertor.makeAlphabet(Integer.parseInt(parameters[2])));
         return new Result("encode all right", ret.getResultCode());
 
     }

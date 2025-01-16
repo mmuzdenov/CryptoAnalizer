@@ -11,11 +11,7 @@ import static ru.javarush.uzdenov.cryptoanalyzer.constants.Constants.ALPHABET;
 public class CaesarConvertor {
 
     public static String makeAlphabet(int key){
-        String toAalphabet= ALPHABET.substring(key) + ALPHABET.substring(0, key);
-        System.out.println("Encode:makeAlphabet");
-        System.out.println(ALPHABET);
-        System.out.println(toAalphabet);
-        return toAalphabet;
+        return ALPHABET.substring(key) + ALPHABET.substring(0, key);
     }
 
     public static Result Execute(String fileFrom,String fileTo, String alphabetFrom,String alphabetTo){
